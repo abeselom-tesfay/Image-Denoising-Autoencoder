@@ -7,10 +7,10 @@ This project implements a deep learning-based image denoising system using a res
 #### Architecture
 The model employs a convolutional autoencoder with residual blocks to enhance training stability and feature preservation. The architecture includes:
 
-- Encoder: Series of convolutional layers with max-pooling for feature extraction
-- Bottleneck: Compressed representation learning
-- Decoder: Transposed convolutions for image reconstruction
-- Residual Connections: Skip connections to mitigate vanishing gradient problems
+- **Encoder**: Series of convolutional layers with max-pooling for feature extraction
+- **Bottleneck**: Compressed representation learning
+- **Decoder**: Transposed convolutions for image reconstruction
+- **Residual** Connections: Skip connections to mitigate vanishing gradient problems
 
 #### Noise Model
 Gaussian noise with variance 0.01 is added to clean CIFAR-10 images to create training and testing pairs for the denoising task.
@@ -18,8 +18,8 @@ Gaussian noise with variance 0.01 is added to clean CIFAR-10 images to create tr
 #### Performance Results
 The trained model achieves competitive denoising performance:
 
-- PSNR: 28.26 dB (average on test set)
-- SSIM: 0.84 (average on test set)
+- **PSNR**: 28.26 dB (average on test set)
+- **SSIM**: 0.84 (average on test set)
 
 Comparative analysis shows significant improvement over traditional denoising methods:
 
